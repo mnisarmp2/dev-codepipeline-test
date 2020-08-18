@@ -1,0 +1,22 @@
+---
+version: 0.2
+phases:
+  install:
+    commands:
+      - pwd
+      - printenv REPOSITORY_NAME
+      - echo $REPOSITORY_NAME
+      - echo 'install step'
+  pre_build:
+      commands:
+      - echo 'pre_build step'
+  build:
+    commands:
+      - echo 'build step'
+
+  post_build:
+    commands:
+      - echo 'post_build step'
+      - printf '[{"name":"hello-k8s","imageUri":"%s"}]' 'uri' > build.json
+artifacts:
+  files: build.json
