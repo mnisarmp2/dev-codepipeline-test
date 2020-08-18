@@ -6,6 +6,8 @@ phases:
       - pwd
       - printenv REPOSITORY_NAME
       - echo $REPOSITORY_NAME
+      - printenv REPOSITORY_BRANCH
+      - echo $REPOSITORY_BRANCH
       - echo 'install step'
   pre_build:
       commands:
