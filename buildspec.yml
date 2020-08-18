@@ -3,7 +3,6 @@ version: 0.2
 phases:
   install:
     commands:
-      - pwd
       - printenv REPOSITORY_NAME
       - echo $REPOSITORY_NAME
       - printenv REPOSITORY_BRANCH
