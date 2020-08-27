@@ -9,7 +9,7 @@ phases:
       - printenv REPOSITORY_BRANCH
       - echo $REPOSITORY_BRANCH
       - printenv REPOSITORY_FOLDER
-      - echo $REPOSITORY_FOLDER
+      - echo $REPOSITORY_FOLDER1
       - pwd
       - echo 'install step'
   pre_build:
